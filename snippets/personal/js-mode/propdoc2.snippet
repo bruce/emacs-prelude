@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: jsdoc property comment2
+# key: propdoc2
+# --
+/**
+ * $1
+ *
+ * @property {${2:Object}} `(save-excursion
+                              (let* ((match (re-search-forward
+                                              (rx
+                                                line-start (one-or-more space)
+                                                (group (one-or-more word)) ":")))
+                                     (prop-name (and match (match-string 1))))
+                              prop-name))`
+*/$0

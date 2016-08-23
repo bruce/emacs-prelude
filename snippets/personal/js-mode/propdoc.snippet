@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: jsdoc property comment
+# key: propdoc
+# --
+/**
+ * $1
+ *
+ * @property {${2:Object}} `(save-excursion
+                              (let* ((match (re-search-forward "^\\s-+\\<\\([^:]+\\):"))
+                                (prop-name (and match (match-string 1))))
+                              prop-name))`
+*/$0
